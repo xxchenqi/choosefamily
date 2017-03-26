@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/llAreaInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_12DP"
+        android:background="@color/white_FFFFFF"
+        android:orientation="vertical">
+
+        <View
+            style="@style/Line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_50DP"
+                android:layout_marginLeft="@dimen/DIMEN_12DP"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="周边信息"
+                android:textColor="@color/black_333333"
+                android:textSize="@dimen/DIMEN_17DP" />
+
+            <TextView
+                android:id="@+id/tvShowAllInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_50DP"
+                android:layout_marginLeft="@dimen/DIMEN_12DP"
+                android:gravity="center_vertical"
+                android:text="查看全部"
+                android:textColor="@color/orange_FE7700"
+                android:textSize="@dimen/DIMEN_16DP" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/DIMEN_12DP"
+                android:scaleType="fitCenter"
+                android:src="@drawable/orange_arrow" />
+        </LinearLayout>
+
+        <View style="@style/Line" />
+
+        <!--吃-->
+        <RelativeLayout
+            android:id="@+id/rlEat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/DIMEN_16DP"
+            android:paddingLeft="@dimen/DIMEN_12DP"
+            android:paddingRight="@dimen/DIMEN_12DP"
+            android:paddingTop="@dimen/DIMEN_16DP">
+
+            <ImageView
+                android:id="@+id/ivEat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/food_icon" />
+
+            <TextView
+                android:id="@+id/tvEat"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_17DP"
+                android:layout_marginLeft="@dimen/DIMEN_12DP"
+                android:layout_toRightOf="@id/ivEat"
+                android:gravity="center_vertical"
+                android:text="吃"
+                android:textColor="@color/black_333333"
+                android:textSize="@dimen/DIMEN_14DP" />
+
+            <TextView
+                android:id="@+id/tvEatInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_20DP"
+                android:layout_alignLeft="@id/tvEat"
+                android:layout_below="@id/tvEat"
+                android:layout_toRightOf="@id/ivEat"
+                android:gravity="center_vertical"
+                android:text="有90个美食广场"
+                android:textColor="@color/gray_999999"
+                android:textSize="@dimen/DIMEN_14DP" />
+
+            <TextView
+                android:id="@+id/tvEatDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_20DP"
+                android:layout_alignLeft="@id/tvEat"
+                android:layout_below="@id/tvEatInfo"
+                android:layout_toRightOf="@id/ivEat"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="肯德基，麦当劳，超级鸡车,超级鸡车,超级鸡车,超级鸡车"
+                android:textColor="@color/gray_999999"
+                android:textSize="@dimen/DIMEN_14DP" />
+        </RelativeLayout>
+
+        <View style="@style/Line" android:id="@+id/lineEat"/>
+
+        <!--玩-->
+        <RelativeLayout
+            android:id="@+id/rlPlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/DIMEN_16DP"
+            android:paddingLeft="@dimen/DIMEN_12DP"
+            android:paddingRight="@dimen/DIMEN_12DP"
+            android:paddingTop="@dimen/DIMEN_16DP">
+
+            <ImageView
+                android:id="@+id/ivPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/play_icon" />
+
+            <TextView
+                android:id="@+id/tvPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_17DP"
+                android:layout_marginLeft="@dimen/DIMEN_12DP"
+                android:layout_toRightOf="@id/ivPlay"
+                android:gravity="center_vertical"
+                android:text="玩"
+                android:textColor="@color/black_333333"
+                android:textSize="@dimen/DIMEN_14DP" />
+
+            <TextView
+                android:id="@+id/tvPlayInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_20DP"
+                android:layout_alignLeft="@id/tvPlay"
+                android:layout_below="@id/tvPlay"
+                android:layout_toRightOf="@id/ivPlay"
+                android:gravity="center_vertical"
+                android:text="有90个美食广场"
+                android:textColor="@color/gray_999999"
+                android:textSize="@dimen/DIMEN_14DP" />
+
+            <TextView
+                android:id="@+id/tvPlayDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_20DP"
+                android:layout_alignLeft="@id/tvPlay"
+                android:layout_below="@id/tvPlayInfo"
+                android:layout_toRightOf="@id/ivPlay"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="肯德基，麦当劳，超级鸡车,超级鸡车,超级鸡车,超级鸡车"
+                android:textColor="@color/gray_999999"
+                android:textSize="@dimen/DIMEN_14DP" />
+        </RelativeLayout>
+
+        <View style="@style/Line"  android:id="@+id/linePlay"/>
+
+        <!--学-->
+        <RelativeLayout
+            android:id="@+id/rlStudy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/DIMEN_16DP"
+            android:paddingLeft="@dimen/DIMEN_12DP"
+            android:paddingRight="@dimen/DIMEN_12DP"
+            android:paddingTop="@dimen/DIMEN_16DP">
+
+            <ImageView
+                android:id="@+id/ivStudy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/study_icon" />
+
+            <TextView
+                android:id="@+id/tvStudy"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_17DP"
+                android:layout_marginLeft="@dimen/DIMEN_12DP"
+                android:layout_toRightOf="@id/ivStudy"
+                android:gravity="center_vertical"
+                android:text="学"
+                android:textColor="@color/black_333333"
+                android:textSize="@dimen/DIMEN_14DP" />
+
+            <TextView
+                android:id="@+id/tvStudyInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_20DP"
+                android:layout_alignLeft="@id/tvStudy"
+                android:layout_below="@id/tvStudy"
+                android:layout_toRightOf="@id/ivStudy"
+                android:gravity="center_vertical"
+                android:text="有90个美食广场"
+                android:textColor="@color/gray_999999"
+                android:textSize="@dimen/DIMEN_14DP" />
+
+            <TextView
+                android:id="@+id/tvStudyDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_20DP"
+                android:layout_alignLeft="@id/tvStudy"
+                android:layout_below="@id/tvStudyInfo"
+                android:layout_toRightOf="@id/ivStudy"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="肯德基，麦当劳，超级鸡车,超级鸡车,超级鸡车,超级鸡车"
+                android:textColor="@color/gray_999999"
+                android:textSize="@dimen/DIMEN_14DP" />
+        </RelativeLayout>
+
+        <View style="@style/Line"  android:id="@+id/lineStudy"/>
+
+        <!--买-->
+        <RelativeLayout
+            android:id="@+id/rlBuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/DIMEN_16DP"
+            android:paddingLeft="@dimen/DIMEN_12DP"
+            android:paddingRight="@dimen/DIMEN_12DP"
+            android:paddingTop="@dimen/DIMEN_16DP">
+
+            <ImageView
+                android:id="@+id/ivBuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/shopping_icon" />
+
+            <TextView
+                android:id="@+id/tvBuy"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_17DP"
+                android:layout_marginLeft="@dimen/DIMEN_12DP"
+                android:layout_toRightOf="@id/ivBuy"
+                android:gravity="center_vertical"
+                android:text="买"
+                android:textColor="@color/black_333333"
+                android:textSize="@dimen/DIMEN_14DP" />
+
+            <TextView
+                android:id="@+id/tvBuyInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_20DP"
+                android:layout_alignLeft="@id/tvBuy"
+                android:layout_below="@id/tvBuy"
+                android:layout_toRightOf="@id/ivBuy"
+                android:gravity="center_vertical"
+                android:text="有90个美食广场"
+                android:textColor="@color/gray_999999"
+                android:textSize="@dimen/DIMEN_14DP" />
+
+            <TextView
+                android:id="@+id/tvBuyDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_20DP"
+                android:layout_alignLeft="@id/tvBuy"
+                android:layout_below="@id/tvBuyInfo"
+                android:layout_toRightOf="@id/ivBuy"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="肯德基，麦当劳，超级鸡车,超级鸡车,超级鸡车,超级鸡车"
+                android:textColor="@color/gray_999999"
+                android:textSize="@dimen/DIMEN_14DP" />
+        </RelativeLayout>
+
+        <View style="@style/Line"  android:id="@+id/lineBuy"/>
+
+        <!--医-->
+        <RelativeLayout
+            android:id="@+id/rlMedicine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/DIMEN_16DP"
+            android:paddingLeft="@dimen/DIMEN_12DP"
+            android:paddingRight="@dimen/DIMEN_12DP"
+            android:paddingTop="@dimen/DIMEN_16DP">
+
+            <ImageView
+                android:id="@+id/ivMedicine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/hospital_icon" />
+
+            <TextView
+                android:id="@+id/tvMedicine"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_17DP"
+                android:layout_marginLeft="@dimen/DIMEN_12DP"
+                android:layout_toRightOf="@id/ivMedicine"
+                android:gravity="center_vertical"
+                android:text="医"
+                android:textColor="@color/black_333333"
+                android:textSize="@dimen/DIMEN_14DP" />
+
+            <TextView
+                android:id="@+id/tvMedicineInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_20DP"
+                android:layout_alignLeft="@id/tvMedicine"
+                android:layout_below="@id/tvMedicine"
+                android:layout_toRightOf="@id/ivMedicine"
+                android:gravity="center_vertical"
+                android:text="有90个美食广场"
+                android:textColor="@color/gray_999999"
+                android:textSize="@dimen/DIMEN_14DP" />
+
+            <TextView
+                android:id="@+id/tvMedicineDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_20DP"
+                android:layout_alignLeft="@id/tvMedicine"
+                android:layout_below="@id/tvMedicineInfo"
+                android:layout_toRightOf="@id/ivMedicine"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="肯德基，麦当劳，超级鸡车,超级鸡车,超级鸡车,超级鸡车"
+                android:textColor="@color/gray_999999"
+                android:textSize="@dimen/DIMEN_14DP" />
+        </RelativeLayout>
+
+        <View style="@style/Line"  android:id="@+id/lineMedicine"/>
+    </LinearLayout>
+</layout>

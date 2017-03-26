@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="price">
+        <item>不限</item>
+        <item>100万以下</item>
+        <item>100-150万</item>
+        <item>150-200万</item>
+        <item>200-300万</item>
+        <item>300-500万</item>
+        <item>500-800万</item>
+        <item>800-1000万</item>
+        <item>1000万以上</item>
+    </array>
+
+    <array name="area">
+        <item>不限</item>
+        <item>浦东,25</item>
+        <item>闵行,18</item>
+        <item>宝山,30</item>
+        <item>徐汇,19</item>
+        <item>普陀,28</item>
+        <item>杨浦,26</item>
+        <item>长宁,20</item>
+        <item>松江,586</item>
+        <item>嘉定,29</item>
+        <item>黄浦,24</item>
+        <item>静安,21</item>
+        <item>闸北,27</item>
+        <item>虹口,23</item>
+        <item>青浦,31</item>
+        <item>奉贤,32</item>
+        <item>金山,35</item>
+        <item>崇明,996</item>
+    </array>
+
+    <array name="sort">
+        <item>智能排序</item>
+        <item>在售房源数从多到少</item>
+        <item>均价从高到低</item>
+        <item>均价从低到高</item>
+    </array>
+</resources>

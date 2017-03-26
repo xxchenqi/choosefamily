@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_item_follow"
+        android:paddingBottom="@dimen/DIMEN_10DP"
+        android:paddingLeft="@dimen/DIMEN_12DP"
+        android:paddingRight="@dimen/DIMEN_12DP"
+        android:paddingTop="@dimen/DIMEN_10DP">
+
+        <ImageView
+            android:id="@+id/ivHouse"
+            android:layout_width="@dimen/DIMEN_120DP"
+            android:layout_height="@dimen/DIMEN_90DP"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/follow_pic" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_30DP"
+            android:layout_marginLeft="@dimen/DIMEN_8DP"
+            android:layout_toLeftOf="@+id/tvHousePrice"
+            android:layout_toRightOf="@id/ivHouse"
+            android:gravity="center_vertical"
+            android:text="浦江汤臣豪园一期"
+            android:textColor="@color/black_282323"
+            android:textSize="@dimen/DIMEN_16DP"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvBuildAge"
+            style="@style/GraySmallText"
+            android:layout_height="@dimen/DIMEN_20DP"
+            android:layout_alignLeft="@id/tvName"
+            android:layout_below="@id/tvName"
+            android:gravity="center_vertical"
+            android:text="建筑年代：2006" />
+
+        <TextView
+            android:id="@+id/tvRegion"
+            style="@style/GraySmallText"
+            android:layout_height="@dimen/DIMEN_20DP"
+            android:layout_alignLeft="@id/tvName"
+            android:layout_below="@id/tvBuildAge"
+            android:gravity="center_vertical"
+            android:text="杨浦区" />
+
+        <TextView
+            android:id="@+id/tvPlate"
+            style="@style/GraySmallText"
+            android:layout_height="@dimen/DIMEN_20DP"
+            android:layout_marginLeft="@dimen/DIMEN_6DP"
+            android:layout_below="@id/tvBuildAge"
+            android:layout_toRightOf="@id/tvRegion"
+            android:gravity="center_vertical"
+            android:text="五角场" />
+
+        <TextView
+            android:id="@+id/tvPriceLabel"
+            style="@style/GraySmallText"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_20DP"
+            android:layout_alignLeft="@id/tvName"
+            android:layout_below="@id/tvPlate"
+            android:gravity="center_vertical"
+            android:text="@string/avg_price_label" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_20DP"
+            android:layout_below="@id/tvPlate"
+            android:layout_toRightOf="@id/tvPriceLabel"
+            android:gravity="center_vertical"
+            android:text="70235元/m2"
+            android:textColor="@color/orange_FE7700"
+            android:textSize="@dimen/DIMEN_14DP" />
+    </RelativeLayout>
+</layout>

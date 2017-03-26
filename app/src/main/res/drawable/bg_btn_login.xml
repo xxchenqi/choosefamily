@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 按下 -->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/yellow_F3D720" />
+            <corners android:radius="@dimen/DIMEN_4DP" />
+        </shape>
+
+    </item>
+    <!-- 抬起 -->
+    <item>
+        <shape>
+            <solid android:color="@color/yellow_FBE558" />
+            <corners android:radius="@dimen/DIMEN_4DP" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleMarginEnd="@dimen/DIMEN_64DP"
+                app:expandedTitleMarginStart="@dimen/DIMEN_48DP"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="true">
+
+                    <ImageView
+                        android:id="@+id/ivParallax"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/DIMEN_281DP"
+                        android:adjustViewBounds="true"
+                        android:fitsSystemWindows="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/details_pic"
+                        app:layout_collapseMode="parallax" />
+
+                    <ImageView
+                        android:id="@+id/iv360"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/bg_360"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <View
+                    android:fitsSystemWindows="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@drawable/nav_bg" />
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:gravity="center"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:theme="@style/ParallaxToolbarTheme"
+                    app:title="" />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_FFFFFF"
+                    android:paddingBottom="@dimen/DIMEN_12DP"
+                    android:paddingLeft="@dimen/DIMEN_12DP"
+                    android:paddingRight="@dimen/DIMEN_12DP"
+                    android:paddingTop="@dimen/DIMEN_12DP">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/DIMEN_38DP"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="浦江世博家园十五街坊"
+                        android:textColor="@color/black_333333"
+                        android:textSize="@dimen/DIMEN_20DP" />
+
+                    <TextView
+                        android:id="@+id/tvBuildAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/DIMEN_20DP"
+                        android:layout_below="@id/tvName"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="建筑年代：2006"
+                        android:textColor="@color/gray_999999"
+                        android:textSize="@dimen/DIMEN_14DP" />
+
+                    <TextView
+                        android:id="@+id/tvRegion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/DIMEN_30DP"
+                        android:layout_below="@id/tvBuildAge"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="杨浦区"
+                        android:textColor="@color/gray_999999"
+                        android:textSize="@dimen/DIMEN_14DP" />
+
+                    <TextView
+                        android:id="@+id/tvPlate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/DIMEN_30DP"
+                        android:layout_below="@id/tvBuildAge"
+                        android:layout_marginLeft="@dimen/DIMEN_4DP"
+                        android:layout_toRightOf="@id/tvRegion"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="五角场"
+                        android:textColor="@color/gray_999999"
+                        android:textSize="@dimen/DIMEN_14DP" />
+
+                    <TextView
+                        android:id="@+id/tvAvgPriceLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/DIMEN_30DP"
+                        android:layout_below="@id/tvBuildAge"
+                        android:layout_toLeftOf="@+id/tvAvgPrice"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="均价："
+                        android:textColor="@color/gray_999999"
+                        android:textSize="@dimen/DIMEN_14DP" />
+
+                    <TextView
+                        android:id="@+id/tvAvgPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/DIMEN_30DP"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/tvBuildAge"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="￥78000/m2"
+                        android:textColor="@color/orange_FE7700"
+                        android:textSize="@dimen/DIMEN_18DP" />
+
+                    <ImageView
+                        android:id="@+id/ivFollow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/tvName"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/unlike_icon" />
+
+                    <FrameLayout
+                        android:id="@+id/fl_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/DIMEN_35DP"
+                        android:layout_below="@id/tvRegion"
+                        android:layout_marginTop="@dimen/DIMEN_16DP">
+
+                        <ImageView
+                            android:layout_width="@dimen/DIMEN_350DP"
+                            android:layout_height="@dimen/DIMEN_35DP"
+                            android:src="@drawable/map_bg" />
+
+                        <ImageView
+                            android:layout_width="@dimen/DIMEN_20DP"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/DIMEN_4DP"
+                            android:layout_marginRight="@dimen/DIMEN_4DP"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/pin_icon" />
+
+                        <TextView
+                            android:id="@+id/tvAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/DIMEN_28DP"
+                            android:text="上海市场北路39弄" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginRight="@dimen/DIMEN_12DP"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/currency_arrow_right" />
+                    </FrameLayout>
+                </RelativeLayout>
+
+                <!--社区基本信息-->
+                <include layout="@layout/item_base_info" />
+
+                <!--周边信息-->
+                <include layout="@layout/item_area_info" />
+
+                <!--房源列表-->
+                <TextView
+                    android:id="@+id/tvSiteInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_50DP"
+                    android:layout_marginTop="@dimen/DIMEN_12DP"
+                    android:layout_weight="1"
+                    android:background="@color/white_FFFFFF"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/DIMEN_12DP"
+                    android:text="@string/site_label"
+                    android:textColor="@color/black_333333"
+                    android:textSize="@dimen/DIMEN_17DP" />
+
+                <LinearLayout
+                    android:id="@+id/llArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</layout>

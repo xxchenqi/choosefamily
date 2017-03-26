@@ -1,0 +1,148 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.example.toolbar.MainActivity">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/app_name"
+                    android:textColor="@color/black_282323"
+                    android:textSize="@dimen/DIMEN_17DP" />
+
+                <ImageView
+                    android:id="@+id/ivFilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:paddingRight="@dimen/DIMEN_17DP"
+                    android:src="@drawable/home_screen_icon" />
+            </android.support.v7.widget.Toolbar>
+
+            <include layout="@layout/activity_content_main" />
+        </LinearLayout>
+        <!-- 侧滑菜单内容 android:layout_gravity="start" -->
+
+        <RelativeLayout
+            android:id="@+id/drawer_view"
+            android:layout_width="@dimen/DIMEN_240DP"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/white"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/DIMEN_100DP"
+                    android:layout_height="@dimen/DIMEN_100DP"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/DIMEN_32DP"
+                    android:background="@drawable/desc_yuan">
+
+                    <com.eju.zejia.ui.views.CircleImageView
+                        android:id="@+id/civ_avatar"
+                        android:layout_width="@dimen/DIMEN_84DP"
+                        android:layout_height="@dimen/DIMEN_84DP"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/default_avatar"
+                        app:border_color="@color/gray_e"
+                        app:border_width="@dimen/DIMEN_1DP" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_main_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/DIMEN_8DP"
+                    android:text="正在加载"
+                    android:textColor="@color/black_28"
+                    android:textSize="@dimen/DIMEN_16DP" />
+
+                <View
+                    style="@style/mian_line"
+                    android:layout_marginTop="@dimen/DIMEN_24DP" />
+
+                <TextView
+                    android:id="@+id/tv_main_care"
+                    style="@style/mian_text"
+                    android:drawableLeft="@drawable/nev_collect_icon"
+                    android:text="@string/main_care" />
+
+                <View style="@style/mian_line" />
+
+                <TextView
+                    android:id="@+id/tv_main_person"
+                    style="@style/mian_text"
+                    android:drawableLeft="@drawable/nev_porfile_icon"
+                    android:text="@string/main_person" />
+
+                <View style="@style/mian_line" />
+
+                <TextView
+                    android:id="@+id/tv_main_help"
+                    style="@style/mian_text"
+                    android:drawableLeft="@drawable/nev_help_icon"
+                    android:text="@string/main_help"
+                    android:visibility="gone" />
+
+              <!--  <View style="@style/mian_line" />-->
+
+                <TextView
+                    android:id="@+id/tv_main_setting"
+                    style="@style/mian_text"
+                    android:drawableLeft="@drawable/nev_eidt_icon"
+                    android:text="@string/main_setting" />
+
+                <View style="@style/mian_line" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_main_search"
+                android:layout_width="@dimen/DIMEN_100DP"
+                android:layout_height="@dimen/DIMEN_36DP"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/DIMEN_34DP"
+                android:background="@drawable/desc_chang"
+                android:gravity="center"
+                android:text="@string/main_search"
+                android:textColor="@color/black_69"
+                android:textSize="@dimen/DIMEN_12DP" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/DIMEN_12DP"
+                android:gravity="center"
+                android:text="@string/main_search_result"
+                android:textColor="@color/gray_BBBBBB"
+                android:textSize="@dimen/DIMEN_12DP" />
+        </RelativeLayout>
+    </android.support.v4.widget.DrawerLayout>
+</layout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 分割线 -->
+    <style name="line_gray_BBBBBB">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/DIMEN_1DP</item>
+        <item name="android:background">@color/gray_BBBBBB</item>
+        <item name="android:layout_marginLeft">@dimen/DIMEN_48DP</item>
+        <item name="android:layout_marginRight">@dimen/DIMEN_48DP</item>
+        <item name="android:layout_marginTop">@dimen/DIMEN_12DP</item>
+    </style>
+
+    <!--首页抽屉-->
+    <style name="mian_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/DIMEN_66DP</item>
+        <item name="android:textSize">@dimen/DIMEN_16DP</item>
+        <item name="android:textColor">@color/black_28</item>
+        <item name="android:layout_marginLeft">@dimen/DIMEN_24DP</item>
+        <item name="android:layout_marginRight">@dimen/DIMEN_24DP</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">@dimen/DIMEN_12DP</item>
+    </style>
+    <style name="mian_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/DIMEN_1DP</item>
+        <item name="android:background">@color/gray_e</item>
+    </style>
+
+    <style name="around_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/DIMEN_12DP</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

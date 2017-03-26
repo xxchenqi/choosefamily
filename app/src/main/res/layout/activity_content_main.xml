@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_main">
+
+        <LinearLayout
+            android:id="@+id/llFilter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_48DP"
+            android:background="@color/white_FFFFFF"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llArea"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvArea"
+                    style="@style/SortBarText"
+                    android:ellipsize="end"
+                    android:maxLength="7"
+                    android:maxLines="1"
+                    android:text="@string/area" />
+
+                <ImageView
+                    android:id="@+id/ivArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_4DP"
+                    android:src="@drawable/down_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPrice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    style="@style/SortBarText"
+                    android:ellipsize="end"
+                    android:maxLength="7"
+                    android:maxLines="1"
+                    android:text="@string/price" />
+
+                <ImageView
+                    android:id="@+id/ivPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_4DP"
+                    android:src="@drawable/down_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llIntell"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvIntell"
+                    style="@style/SortBarText"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:maxLength="7"
+                    android:maxLines="1"
+                    android:text="@string/sort" />
+
+                <ImageView
+                    android:id="@+id/ivIntell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_4DP"
+                    android:src="@drawable/down_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1DP"
+            android:background="@color/gray_EEEEEE" />
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:foreground="@color/transparent_half">
+
+            <com.eju.zejia.ui.views.SuperSwipeRefreshLayout
+                android:id="@+id/swipe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/DIMEN_12DP"
+                android:layout_marginRight="@dimen/DIMEN_12DP">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.eju.zejia.ui.views.SuperSwipeRefreshLayout>
+
+            <LinearLayout
+                android:id="@+id/popup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_FFFFFF"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ListView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_12DP"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@color/gray_EEEEEE"
+                    android:dividerHeight="@dimen/DIMEN_1DP"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical" />
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="item_filter_text" type="String" />
+    </data>
+
+    <com.eju.zejia.ui.views.FilterCheckBox
+        android:id="@+id/item_filter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_28DP"
+        android:text="@{item_filter_text}"
+        android:textColor="@drawable/color_item_filter"
+        android:background="@drawable/bg_item_filter"
+        android:checked="true"
+        app:checkDrawable="@drawable/icon_check_item_filter"
+        app:debug="false"/>
+    <!-- when debug is true, some position line will draw on the widget -->
+    <!-- red line is the left and the right bounds of the check drawable -->
+    <!-- green line is position of getLineLeft(0) of the text -->
+    <!-- magenta line is the padding (8dp/px) offsets the right of check drawable -->
+
+
+</layout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gray_F3F3FF"
+        tools:context="com.eju.zejia.ui.activities.AboutUsActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/about_us_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/about_us"
+                android:textColor="@color/black_282323"
+                android:textSize="@dimen/DIMEN_17DP"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <!--<ImageView-->
+            <!--android:layout_width="@dimen/DIMEN_140DP"-->
+            <!--android:layout_height="@dimen/DIMEN_140DP"-->
+            <!--android:layout_marginTop="@dimen/DIMEN_55DP"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:src="@mipmap/ic_launcher"-->
+            <!--tools:ignore="contentDescription"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="@dimen/DIMEN_24DP"-->
+            <!--android:layout_marginBottom="@dimen/DIMEN_55DP"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/black_333333"-->
+            <!--android:textSize="@dimen/DIMEN_30DP"-->
+            <!--android:text="@string/app_name"/>-->
+
+        <WebView
+            android:id="@+id/wbv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/yellow_FBE558">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/around_life"
+                android:textColor="@color/black_282323"
+                android:textSize="@dimen/DIMEN_17DP" />
+
+        </android.support.v7.widget.Toolbar>
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_48DP"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/DIMEN_12DP"
+            android:layout_marginRight="@dimen/DIMEN_12DP"
+            android:layout_marginBottom="@dimen/DIMEN_24DP"
+            android:background="@drawable/around_back"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_around_eat"
+                style="@style/around_text"
+                android:text="@string/eat"
+                android:drawableTop="@drawable/map_eat_default_icon"
+                android:drawablePadding="@dimen/DIMEN_2DP"/>
+            <TextView
+                android:id="@+id/tv_around_play"
+                style="@style/around_text"
+                android:text="@string/play"
+                android:drawableTop="@drawable/map_play_default_icon"
+                android:drawablePadding="@dimen/DIMEN_2DP"/>
+            <TextView
+                android:id="@+id/tv_around_study"
+                style="@style/around_text"
+                android:text="@string/study"
+                android:drawableTop="@drawable/map_school_default_icon"
+                android:drawablePadding="@dimen/DIMEN_2DP"/>
+            <TextView
+                android:id="@+id/tv_around_buy"
+                style="@style/around_text"
+                android:text="@string/buy"
+                android:drawableTop="@drawable/map_shop_default_icon"
+                android:drawablePadding="@dimen/DIMEN_2DP"/>
+            <TextView
+                android:id="@+id/tv_around_cure"
+                style="@style/around_text"
+                android:text="@string/cure"
+                android:drawableTop="@drawable/map_hospital_default_icon"
+                android:drawablePadding="@dimen/DIMEN_2DP"/>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

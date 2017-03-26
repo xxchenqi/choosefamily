@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/DIMEN_12DP"
+        android:id="@+id/llBaseInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_FFFFFF"
+        android:orientation="vertical">
+
+        <View style="@style/Line"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_50DP"
+            android:layout_marginLeft="@dimen/DIMEN_12DP"
+            android:gravity="center_vertical"
+            android:text="社区基本信息"
+            android:textColor="@color/black_333333"
+            android:textSize="@dimen/DIMEN_17DP" />
+
+        <View style="@style/Line" />
+
+        <GridView
+            android:id="@+id/grid"
+            android:numColumns="2"
+            android:verticalSpacing="@dimen/DIMEN_12DP"
+            android:stretchMode="columnWidth"
+            android:layout_marginLeft="@dimen/DIMEN_12DP"
+            android:layout_marginRight="@dimen/DIMEN_12DP"
+            android:layout_marginTop="@dimen/DIMEN_20DP"
+            android:layout_marginBottom="@dimen/DIMEN_20DP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!--<TableLayout-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="@dimen/DIMEN_20DP"-->
+            <!--android:layout_marginLeft="@dimen/DIMEN_12DP"-->
+            <!--android:layout_marginTop="@dimen/DIMEN_20DP">-->
+
+            <!--<TableRow>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/DIMEN_22DP"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center_vertical">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:scaleType="fitCenter"-->
+                        <!--android:src="@drawable/house_icon" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/DetailGrayText"-->
+                        <!--android:layout_marginLeft="@dimen/DIMEN_8DP"-->
+                        <!--android:text="建筑年代：" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tvBuildAge"-->
+                        <!--style="@style/DetailBlackText"-->
+                        <!--android:text="1995" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/DIMEN_22DP"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center_vertical">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:scaleType="fitCenter"-->
+                        <!--android:src="@drawable/pot_icon" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/DetailGrayText"-->
+                        <!--android:layout_marginLeft="@dimen/DIMEN_8DP"-->
+                        <!--android:text="占地面积：" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tvArea"-->
+                        <!--style="@style/DetailBlackText"-->
+                        <!--android:text="2000" />-->
+                <!--</LinearLayout>-->
+            <!--</TableRow>-->
+
+            <!--<TableRow>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/DIMEN_22DP"-->
+                    <!--android:layout_marginTop="@dimen/DIMEN_12DP"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center_vertical">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:scaleType="fitCenter"-->
+                        <!--android:src="@drawable/year_icon" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/DetailGrayText"-->
+                        <!--android:layout_marginLeft="@dimen/DIMEN_8DP"-->
+                        <!--android:text="房屋总数：" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tvHouseCount"-->
+                        <!--style="@style/DetailBlackText"-->
+                        <!--android:text="2500" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/DIMEN_22DP"-->
+                    <!--android:layout_marginTop="@dimen/DIMEN_12DP"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center_vertical">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:scaleType="fitCenter"-->
+                        <!--android:src="@drawable/area_icon" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/DetailGrayText"-->
+                        <!--android:layout_marginLeft="@dimen/DIMEN_8DP"-->
+                        <!--android:text="户均车位：" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tvParkCount"-->
+                        <!--style="@style/DetailBlackText"-->
+                        <!--android:text="25" />-->
+                <!--</LinearLayout>-->
+            <!--</TableRow>-->
+
+            <!--<TableRow>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/DIMEN_22DP"-->
+                    <!--android:layout_marginTop="@dimen/DIMEN_12DP"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center_vertical">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:scaleType="fitCenter"-->
+                        <!--android:src="@drawable/plot_ratio_icon" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/DetailGrayText"-->
+                        <!--android:layout_marginLeft="@dimen/DIMEN_8DP"-->
+                        <!--android:text="容积率：" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tvCapacityRate"-->
+                        <!--style="@style/DetailBlackText"-->
+                        <!--android:text="2.3" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/DIMEN_22DP"-->
+                    <!--android:layout_marginTop="@dimen/DIMEN_12DP"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center_vertical">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:scaleType="fitCenter"-->
+                        <!--android:src="@drawable/green_icon" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/DetailGrayText"-->
+                        <!--android:layout_marginLeft="@dimen/DIMEN_8DP"-->
+                        <!--android:text="绿化率：" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tvGreenRate"-->
+                        <!--style="@style/DetailBlackText"-->
+                        <!--android:text="21%" />-->
+                <!--</LinearLayout>-->
+            <!--</TableRow>-->
+        <!--</TableLayout>-->
+        <View style="@style/Line"/>
+    </LinearLayout>
+</layout>

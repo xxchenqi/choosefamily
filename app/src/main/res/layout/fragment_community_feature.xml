@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_community_feature"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_pop_feature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/DIMEN_16DP"
+            android:text="标题"
+            android:textColor="@color/black_333333"
+            android:textSize="@dimen/DIMEN_16DP" />
+
+        <TextView
+            android:id="@+id/tv_pop_feature_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/DIMEN_12DP"
+            android:layout_marginRight="@dimen/DIMEN_12DP"
+            android:layout_marginTop="@dimen/DIMEN_10DP"
+            android:text="内容"
+            android:textColor="@color/gray_999999"
+            android:textSize="@dimen/DIMEN_14DP" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1DP"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/DIMEN_12DP"
+            android:layout_marginRight="@dimen/DIMEN_12DP"
+            android:layout_marginTop="@dimen/DIMEN_12DP"
+            android:background="@color/gray_EEEEEE" />
+
+
+        <GridView
+            android:id="@+id/gv_data"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/DIMEN_12DP"
+            android:layout_marginRight="@dimen/DIMEN_12DP"
+            android:layout_marginTop="@dimen/DIMEN_20DP"
+            android:layout_weight="1"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:verticalSpacing="@dimen/DIMEN_20DP" />
+
+
+    </LinearLayout>
+
+</layout>

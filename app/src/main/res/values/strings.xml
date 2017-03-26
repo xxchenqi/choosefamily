@@ -1,0 +1,193 @@
+<resources>
+    <string name="app_name">择家</string>
+
+    <!--统计-->
+    <string name="page_act_about">关于我们页</string>
+    <string name="page_act_always_address">常去地址页</string>
+    <string name="page_act_always_address_work">设置工作区域页</string>
+    <string name="page_act_always_address_life">设置生活区域页</string>
+    <string name="page_act_around">周边生活页</string>
+    <string name="page_act_baidu_map">周边生活-地图页</string>
+    <string name="page_act_choose_login">选择登录方式页</string>
+    <string name="page_act_community_detail">社区详情页</string>
+    <string name="page_act_community_feature">社区特色页</string>
+    <string name="page_act_filter">首页筛选条件页</string>
+    <string name="page_act_forget_password">忘记密码页</string>
+    <string name="page_act_forget_set_password">忘记密码-设置密码页</string>
+    <string name="page_act_guide">引导页</string>
+    <string name="page_act_house_list">在售房源页</string>
+    <string name="page_act_life_status">生活状态页</string>
+    <string name="page_act_login">手机登录页</string>
+    <string name="page_act_main">首页(社区列表)</string>
+    <string name="page_act_modify_nick_name">修改昵称页</string>
+    <string name="page_act_modify_password">修改密码页</string>
+    <string name="page_act_follow">我的关注页</string>
+    <string name="page_act_personal_information">个人信息页</string>
+    <string name="page_act_register">手机注册页</string>
+    <string name="page_act_register_set_password">手机注册-设置密码页</string>
+    <string name="page_act_setting">设置页</string>
+    <string name="page_act_splash">启动页</string>
+    <string name="page_act_web_agreement">用户协议页</string>
+    <string name="page_act_web_housing_details">房源详情页</string>
+
+    <!--轻量级数据存储-->
+    <string name="prefs_is_first">is_first</string>
+    <string name="prefs_is_login">is_login</string>
+    <string name="prefs_is_setting">is_setting</string>
+    <string name="prefs_version">version</string>
+    <string name="prefs_tagVersion">tagVersion</string>
+    <string name="prefs_filterVersion">filterVersion</string>
+    <string name="prefs_desc">desc</string>
+    <string name="prefs_url">url</string>
+    <string name="prefs_sessionId">sessionId</string>
+    <string name="prefs_nickname">nickname</string>
+    <string name="prefs_photoUrl">photoUrl</string>
+    <string name="prefs_mobile">mobile</string>
+    <string name="prefs_weixin">weixin</string>
+    <string name="prefs_qq">qq</string>
+    <string name="prefs_weibo">weibo</string>
+
+    <string name="login">登录</string>
+    <string name="logout">退出登录</string>
+    <string name="phone_login">手机登录</string>
+    <string name="phone_register">手机注册</string>
+    <string name="register">注册</string>
+    <string name="affirm_register">确认注册</string>
+    <string name="affirm_modify">确认修改</string>
+    <string name="please_input_phone">请输入手机号</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="affirm_login">确认登录</string>
+    <string name="forget_password_question">忘记密码?</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="next">下一步</string>
+    <string name="please_input_verify">请输入验证码</string>
+    <string name="please_set_user_password">请设置账户密码</string>
+    <string name="please_set_new_password">请输入新密码</string>
+    <string name="please_set_old_password">请输入旧密码</string>
+    <string name="please_set_nickname">请输入昵称</string>
+    <string name="please_set_again_new_password">请再次输入新密码</string>
+    <string name="warm_prompt_register">温馨提示:确认注册代表您同意用户协议</string>
+    <string name="set_password">设置密码</string>
+    <string name="modify_password">修改密码</string>
+    <string name="modify_nickname">修改昵称</string>
+    <string name="label_login_beUse">用户名必须为手机号或者邮箱</string>
+    <string name="label_login_bePassword">密码必须是字母或数字组成，且长度为6至18位</string>
+    <string name="label_login_hasContent">用户名与密码不能为空</string>
+    <string name="label_please_input_true_phone">请输入正确的手机号格式</string>
+    <string name="label_please_input_true_verify_number">请输入正确的验证码</string>
+    <string name="label_password_equals">两次密码输入不一致</string>
+    <string name="second">%s秒后重发</string>
+    <string name="phone_number">手机号:</string>
+    <string name="verify_code">验证码:</string>
+    <string name="new_password">新密码:</string>
+    <string name="old_password">旧密码:</string>
+    <string name="nick_name_m">昵 称:</string>
+    <string name="repeat_password">重复密码:</string>
+    <string name="community_feature">社区特色</string>
+
+    <string name="back">返回</string>
+    <string name="main_care">我的关注</string>
+    <string name="main_love">我的偏好</string>
+    <string name="main_person">个人中心</string>
+    <string name="main_help">使用帮助</string>
+    <string name="main_setting">设置</string>
+    <string name="main_search">搜索初始化</string>
+    <string name="main_search_result">搜索结果不符合要求</string>
+    <string name="fitmine">适合我的社区</string>
+
+    <string name="confirm">确定</string>
+    <string name="reset">重置</string>
+
+    <!--<string name="filter_item_des">（%1$s）</string>-->
+    <string name="filter_item_des">(%1$s)</string>
+
+    <string name="setting">设置</string>
+    <string name="feedback">意见反馈</string>
+    <string name="about_us">关于我们</string>
+    <string name="version_update">版本更新</string>
+    <string name="give_mark">给择家评分</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="current_cache">%1$.2fMB</string>
+
+    <string name="please_input_feedback">请填写反馈信息</string>
+    <string name="feedback_success">反馈成功</string>
+    <string name="feedback_fail">反馈失败</string>
+    <string name="feedback_cancel">取消反馈</string>
+
+    <string name="already_latest">不需要更新</string>
+
+    <string name="avg_price">%1$s元/m²</string>
+    <string name="avg_price_label">均价：</string>
+    <string name="avg_price_suffix">¥%1$s/m²</string>
+    <string name="sale_price">%1$s万</string>
+    <string name="price_unit">元/m²</string>
+    <string name="sale_num">在售房源：</string>
+    <string name="build_age">建筑年代：%1$s</string>
+    <string name="build_age_label">建筑年代：</string>
+    <string name="area_label">占地面积：</string>
+    <string name="house_count_label">房屋总数：</string>
+    <string name="park_count_label">户均车位：</string>
+    <string name="capacity_rate_label">容积率：</string>
+    <string name="green_rate_label">绿化率：</string>
+    <string name="percent">%</string>
+    <string name="area">区域</string>
+    <string name="price">价格</string>
+    <string name="sort">智能排序</string>
+    <string name="site_label">货比三家才能买到好房子</string>
+    <string name="show_all">查看全部</string>
+    <string name="collapse">收回</string>
+    <string name="area_unit">m²</string>
+    <string name="eat_info">有%1$s个美食广场</string>
+    <string name="play_info">有%1$s个休闲场所</string>
+    <string name="study_info">有%1$s所学校/机构</string>
+    <string name="buy_info">有%1$s个购物广场</string>
+    <string name="medicine_info">有%1$s所医疗机构</string>
+    <string name="fangtianxia">房天下房源</string>
+    <string name="lianjia">链家房源</string>
+    <string name="msg_confirm_delete">确认删除?</string>
+    <string name="ok">确认</string>
+    <string name="cancel">取消</string>
+    <string name="load_more">加载中…</string>
+    <string name="no_more_data">没有更多数据了哦</string>
+
+    <string name="user_privacy"><![CDATA[用户隐私说明及其他信息,点击查看>]]></string>
+    <string name="multiple_choice">选择你择家过程中偏好的特色(多选)</string>
+    <string name="life_status">生活状态</string>
+    <string name="life_status_content">不同的生活状态决定了不同的居住环境</string>
+    <string name="personal_information">个人信息</string>
+    <string name="nick_name">昵称</string>
+    <string name="password">密码</string>
+    <string name="phone">手机</string>
+    <string name="wx">微信</string>
+    <string name="qq">QQ</string>
+    <string name="sina">微博</string>
+    <string name="save">保存</string>
+    <string name="account_binding">账号绑定</string>
+    <string name="unbounded">未绑定</string>
+    <string name="bounded">已绑定</string>
+
+    <string name="always_address">常去地址</string>
+    <string name="always_address_content">我们会帮您优先挑选距离您常去地点近的社区</string>
+    <string name="always_address_work">工作区域</string>
+    <string name="always_address_life">生活区域</string>
+    <string name="find_fit_mine">看看适合我的社区</string>
+    <string name="set_work">设置工作区域</string>
+    <string name="set_life">设置生活区域</string>
+    <string name="add_work_one">新增第一个工作地点</string>
+    <string name="add_work_two">新增第二个工作地点</string>
+    <string name="add_life_one">新增第一个生活地点</string>
+    <string name="add_life_two">新增第二个生活地点</string>
+    <string name="work_tip">工作地、学校</string>
+    <string name="life_tip">现在居住的地点，交际圈子地点</string>
+
+    <string name="around_life">周边生活</string>
+    <string name="eat">吃</string>
+    <string name="play">玩</string>
+    <string name="study">学</string>
+    <string name="buy">买</string>
+    <string name="cure">医</string>
+
+    <string name="housing_details">房源详情</string>
+
+</resources>

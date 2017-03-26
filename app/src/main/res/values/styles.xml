@@ -1,0 +1,135 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseTheme"></style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <!--状态栏颜色-->
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <!--Toolbar颜色-->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <!--返回键样式-->
+        <item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle</item>
+    </style>
+
+    <style name="AppTheme.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ParallaxToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">#FFFFFF</item>
+    </style>
+
+    <!--&lt;!&ndash;筛选器&ndash;&gt;-->
+    <style name="filter_style" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="Transparent">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="SingleLineText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="SortBarText">
+        <item name="android:textSize">@dimen/DIMEN_14DP</item>
+        <item name="android:textColor">@color/black_282323</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="GrayText">
+        <item name="android:textSize">@dimen/DIMEN_14DP</item>
+        <item name="android:textColor">@color/gray_999999</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="GraySmallText">
+        <item name="android:textSize">@dimen/DIMEN_12DP</item>
+        <item name="android:textColor">@color/gray_999999</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/DIMEN_1DP</item>
+        <item name="android:background">@color/gray_EEEEEE</item>
+    </style>
+
+    <style name="DetailBlackText">
+        <item name="android:textSize">@dimen/DIMEN_14DP</item>
+        <item name="android:textColor">@color/black_333333</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="DetailGrayText">
+        <item name="android:textSize">@dimen/DIMEN_14DP</item>
+        <item name="android:textColor">@color/gray_999999</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--拍照对话框-->
+    <style name="dateDialogTheme" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 除去title -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@color/black_99000000</item>
+    </style>
+
+    <!-- 筛选重置按钮 -->
+    <style name="FilterButtonWhite">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/DIMEN_17DP</item>
+        <item name="android:textColor">@color/black_333333</item>
+        <item name="android:background">@color/white_FFFFFF</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="FilterButtonOrange">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/DIMEN_17DP</item>
+        <item name="android:textColor">@color/white_FFFFFF</item>
+        <item name="android:background">@color/orange_FF7700</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="Splash" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+</resources>

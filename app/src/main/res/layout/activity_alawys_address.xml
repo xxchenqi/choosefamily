@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_e"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/yellow_FBE558">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/always_address"
+                android:textColor="@color/black_282323"
+                android:textSize="@dimen/DIMEN_17DP" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_40DP"
+            android:textSize="@dimen/DIMEN_14DP"
+            android:textColor="@color/black_666666"
+            android:gravity="center"
+            android:text="@string/always_address_content"/>
+        <RelativeLayout
+            android:id="@+id/rl_work_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_100DP"
+            android:background="@drawable/desc_chang_white"
+            android:layout_marginLeft="@dimen/DIMEN_12DP"
+            android:layout_marginRight="@dimen/DIMEN_12DP">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_14DP"
+                android:src="@drawable/f_l_work_icon"
+                android:layout_centerVertical="true"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_15DP"
+                android:layout_marginLeft="@dimen/DIMEN_80DP"
+                android:layout_marginRight="@dimen/DIMEN_88DP"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/DIMEN_30DP"
+                    android:gravity="center_vertical"
+                    android:text="@string/always_address_work"
+                    android:textColor="@color/black_333333"
+                    android:textSize="@dimen/DIMEN_17DP"/>
+                <TextView
+                    android:id="@+id/tv_work_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/DIMEN_25DP"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/DIMEN_14DP"
+                    android:singleLine="true"
+                    android:text="@string/work_tip"
+                    android:textColor="@color/orange_FE7700"/>
+                <TextView
+                    android:id="@+id/tv_work_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/DIMEN_25DP"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/DIMEN_14DP"
+                    android:singleLine="true"
+                    android:textColor="@color/orange_FE7700"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/DIMEN_88DP"
+                android:layout_height="@dimen/DIMEN_88DP"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/DIMEN_14DP"
+                    android:src="@drawable/f_l_edit_btn"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_life_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_100DP"
+            android:background="@drawable/desc_chang_white"
+            android:layout_marginLeft="@dimen/DIMEN_12DP"
+            android:layout_marginRight="@dimen/DIMEN_12DP"
+            android:layout_marginTop="@dimen/DIMEN_8DP">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_14DP"
+                android:src="@drawable/f_l_life_icon"
+                android:layout_centerVertical="true"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_15DP"
+                android:layout_marginLeft="@dimen/DIMEN_80DP"
+                android:layout_marginRight="@dimen/DIMEN_88DP"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/DIMEN_30DP"
+                    android:gravity="center_vertical"
+                    android:text="@string/always_address_life"
+                    android:textColor="@color/black_333333"
+                    android:textSize="@dimen/DIMEN_17DP"/>
+                <TextView
+                    android:id="@+id/tv_life_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/DIMEN_25DP"
+                    android:textSize="@dimen/DIMEN_14DP"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/life_tip"
+                    android:textColor="@color/orange_FE7700"/>
+                <TextView
+                    android:id="@+id/tv_life_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/DIMEN_25DP"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/DIMEN_14DP"
+                    android:singleLine="true"
+                    android:textColor="@color/orange_FE7700"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/DIMEN_88DP"
+                android:layout_height="@dimen/DIMEN_88DP"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/DIMEN_14DP"
+                    android:src="@drawable/f_l_edit_btn"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_find"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_56DP"
+                android:background="@color/gray_DDDDDD"
+                android:text="@string/find_fit_mine"
+                android:gravity="center"
+                android:textColor="@color/gray_A0A0A0"
+                android:textSize="@dimen/DIMEN_17DP"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

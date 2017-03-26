@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.activities.FilterActivity">
+
+    <FrameLayout
+        android:id="@+id/filter_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:onClick="onConfirmClick">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="@dimen/DIMEN_340DP"
+            android:layout_gravity="end|top">
+
+            <LinearLayout
+                android:id="@+id/filter_button_bar"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:weightSum="1"
+                android:background="@color/white_FFFFFF"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:id="@+id/filter_reset"
+                    style="@style/FilterButtonWhite"
+                    android:text="@string/reset"
+                    android:onClick="onResetClick"/>
+
+                <View
+                    android:layout_width="@dimen/DIMEN_1DP"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_D6D6D6"/>
+
+                <TextView
+                    android:id="@+id/filter_confirm"
+                    style="@style/FilterButtonOrange"
+                    android:text="@string/confirm"
+                    android:onClick="onConfirmClick"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/filter_horizontal_divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1DP"
+                android:background="@color/gray_D6D6D6"
+                android:layout_above="@id/filter_button_bar"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/filter_rcv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/filter_horizontal_divider"
+                android:background="@color/white_FFFFFF"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</layout>

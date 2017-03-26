@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.activities.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gray_F3F3FF">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/setting_tb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/setting"
+                android:textColor="@color/black_282323"
+                android:textSize="@dimen/DIMEN_17DP"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/setting_rcv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_52DP"
+            android:background="@color/white_FFFFFF"
+            android:gravity="center"
+            android:text="@string/logout"
+            android:textSize="@dimen/DIMEN_17DP"
+            android:textColor="@color/black_282323"
+            android:onClick="prepareRemoteLogoff"/>
+
+
+    </LinearLayout>
+</layout>

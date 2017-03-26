@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_item_follow"
+        android:paddingBottom="@dimen/DIMEN_20DP"
+        android:paddingLeft="@dimen/DIMEN_12DP"
+        android:paddingRight="@dimen/DIMEN_20DP"
+        android:paddingTop="@dimen/DIMEN_20DP">
+
+        <ImageView
+            android:id="@+id/ivHouse"
+            android:layout_width="@dimen/DIMEN_100DP"
+            android:layout_height="@dimen/DIMEN_75DP"
+            android:src="@drawable/housing_pic" />
+
+        <TextView
+            android:id="@+id/tvHouseName"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/DIMEN_8DP"
+            android:layout_height="@dimen/DIMEN_27DP"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/DIMEN_17DP"
+            android:textColor="@color/black_333333"
+            android:layout_toLeftOf="@+id/tvHousePrice"
+            android:layout_toRightOf="@id/ivHouse"
+            android:text="国际丽都城" />
+
+        <TextView
+            android:id="@+id/tvHouseLayout"
+            android:textSize="@dimen/DIMEN_14DP"
+            android:textColor="@color/black_666666"
+            android:layout_alignLeft="@id/tvHouseName"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_24DP"
+            android:layout_below="@id/tvHouseName"
+            android:layout_toRightOf="@id/ivHouse"
+            android:gravity="center_vertical"
+            android:text="2室1厅" />
+
+        <TextView
+            android:id="@+id/tvHouseArea"
+            android:textSize="@dimen/DIMEN_14DP"
+            android:textColor="@color/black_666666"
+            android:layout_marginLeft="@dimen/DIMEN_4DP"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_24DP"
+            android:layout_alignTop="@id/tvHouseLayout"
+            android:layout_toRightOf="@id/tvHouseLayout"
+            android:gravity="center_vertical"
+            android:text="125m2" />
+
+        <TextView
+            android:id="@+id/tvHouseSite"
+            android:textSize="@dimen/DIMEN_14DP"
+            android:textColor="@color/black_666666"
+            android:layout_alignLeft="@id/tvHouseName"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_24DP"
+            android:gravity="center_vertical"
+            android:layout_below="@id/tvHouseLayout"
+            android:layout_toRightOf="@id/ivHouse"
+            android:text="链家房源" />
+
+        <TextView
+            android:id="@+id/tvHousePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_27DP"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/DIMEN_17DP"
+            android:textColor="@color/orange_FE7700"
+            android:layout_alignParentRight="true"
+            android:text="360万" />
+
+        <TextView
+            android:id="@+id/tvAvgPrice"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/tvHousePrice"
+            android:layout_height="@dimen/DIMEN_24DP"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/DIMEN_12DP"
+            android:textColor="@color/gray_999999"
+            android:layout_alignParentRight="true"
+            android:text="259902元/m2" />
+    </RelativeLayout>
+</layout>

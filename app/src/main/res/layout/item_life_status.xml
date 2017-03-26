@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item_life"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_200DP"
+    android:background="@drawable/new_state_check_btn"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_life_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_10DP"
+        android:src="@drawable/state_social_icon" />
+
+    <TextView
+        android:id="@+id/tv_item_life_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_16DP"
+        android:text="数据"
+        android:textColor="@color/black_333333"
+        android:textSize="@dimen/DIMEN_17DP" />
+
+    <TextView
+        android:id="@+id/tv_item_life_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_12DP"
+        android:layout_marginRight="@dimen/DIMEN_12DP"
+        android:layout_marginTop="@dimen/DIMEN_12DP"
+        android:ellipsize="end"
+        android:lineSpacingExtra="@dimen/DIMEN_5DP"
+        android:maxLines="3"
+        android:text="数据内容"
+        android:textColor="@color/gray_999999"
+        android:textSize="@dimen/DIMEN_12DP" />
+</LinearLayout>

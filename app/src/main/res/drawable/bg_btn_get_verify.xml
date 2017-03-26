@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 按下 -->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/gray_EEEEEE" />
+            <corners android:radius="@dimen/DIMEN_4DP" />
+            <stroke
+                android:width="@dimen/DIMEN_1DP"
+                android:color="@color/gray_999999" />
+        </shape>
+
+    </item>
+    <!-- 抬起 -->
+    <item>
+        <shape>
+            <solid android:color="@color/white_FFFFFF" />
+            <corners android:radius="@dimen/DIMEN_4DP" />
+            <stroke
+                android:width="@dimen/DIMEN_1DP"
+                android:color="@color/gray_999999" />
+        </shape>
+    </item>
+</selector>

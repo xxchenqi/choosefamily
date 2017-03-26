@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/DIMEN_12DP"
+        android:background="@color/white_FFFFFF"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/DIMEN_12DP"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivCenter"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_160DP"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:id="@+id/llFollow"
+                    android:layout_width="@dimen/DIMEN_44DP"
+                    android:layout_height="@dimen/DIMEN_24DP"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_follow"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ibFollow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/home_collect_default_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llFeature"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_28DP"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/home_shade_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/DIMEN_12DP">
+
+                    <TextView
+                        android:id="@+id/tvFeature"
+                        style="@style/SingleLineText"
+                        android:text="交通便利 学区房 购物中心"
+                        android:textColor="@color/white_FFFFFF"
+                        android:textSize="@dimen/DIMEN_12DP" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/DIMEN_12DP"
+                android:paddingRight="@dimen/DIMEN_12DP">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/DIMEN_12DP"
+                    android:paddingBottom="@dimen/DIMEN_6DP"
+                    android:paddingTop="@dimen/DIMEN_6DP"
+                    android:text="浦江世博家园十五街坊"
+                    android:textColor="@color/black_282323"
+                    android:textSize="@dimen/DIMEN_16DP" />
+
+                <TextView
+                    android:id="@+id/tvBuildAge"
+                    style="@style/GrayText"
+                    android:layout_alignLeft="@id/tvName"
+                    android:layout_below="@id/tvName"
+                    android:paddingBottom="@dimen/DIMEN_5DP"
+                    android:paddingTop="@dimen/DIMEN_5DP"
+                    android:text="建筑年代: 2006" />
+
+                <TextView
+                    android:id="@+id/tvRegion"
+                    style="@style/GrayText"
+                    android:layout_alignLeft="@id/tvName"
+                    android:layout_below="@id/tvBuildAge"
+                    android:layout_marginBottom="@dimen/DIMEN_12DP"
+                    android:paddingBottom="@dimen/DIMEN_5DP"
+                    android:paddingTop="@dimen/DIMEN_5DP"
+                    android:text="杨浦区" />
+
+                <TextView
+                    android:id="@+id/tvPlate"
+                    style="@style/GrayText"
+                    android:layout_alignBottom="@id/tvRegion"
+                    android:layout_below="@id/tvBuildAge"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/tvRegion"
+                    android:paddingBottom="@dimen/DIMEN_5DP"
+                    android:paddingTop="@dimen/DIMEN_5DP"
+                    android:text="五角场" />
+
+                <TextView
+                    android:id="@+id/tvPriceLabel"
+                    style="@style/GrayText"
+                    android:layout_alignBottom="@id/tvRegion"
+                    android:layout_below="@id/tvBuildAge"
+                    android:layout_toLeftOf="@+id/tvPrice"
+                    android:paddingBottom="@dimen/DIMEN_5DP"
+                    android:paddingTop="@dimen/DIMEN_5DP"
+                    android:text="@string/avg_price_label" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    style="@style/GrayText"
+                    android:layout_alignBottom="@id/tvRegion"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/tvBuildAge"
+                    android:paddingBottom="@dimen/DIMEN_5DP"
+                    android:paddingTop="@dimen/DIMEN_5DP"
+                    android:text="32000元/m2"
+                    android:textColor="@color/orange_FF7800" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</layout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="title" type="String" />
+        <variable name="description" type="String" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/item_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/DIMEN_52DP"
+        android:background="@color/white_FFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/DIMEN_12DP"
+            android:layout_marginLeft="@dimen/DIMEN_12DP"
+            android:textSize="@dimen/DIMEN_16DP"
+            android:textColor="@color/black_282323"
+            android:text="@{title}"/>
+
+        <ImageView
+            android:id="@+id/item_setting_navigator_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/DIMEN_12DP"
+            android:layout_marginRight="@dimen/DIMEN_12DP"
+            android:src="@drawable/currency_arrow_right"
+            tools:ignore="contentDescription"/>
+
+        <TextView
+            android:id="@+id/item_setting_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/item_setting_navigator_image"
+            android:layout_toLeftOf="@id/item_setting_navigator_image"
+            android:textSize="@dimen/DIMEN_14DP"
+            android:textColor="@color/gray_999999"
+            android:text="@{description}"/>
+
+
+    </RelativeLayout>
+</layout>

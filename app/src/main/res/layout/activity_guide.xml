@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_guide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <RadioGroup
+            android:id="@+id/rg_guide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/DIMEN_20DP"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="@dimen/DIMEN_10DP"
+                android:layout_height="@dimen/DIMEN_10DP"
+                android:background="@drawable/bg_circle"
+                android:button="@null"
+                android:clickable="false" />
+
+            <RadioButton
+                android:layout_width="@dimen/DIMEN_10DP"
+                android:layout_height="@dimen/DIMEN_10DP"
+                android:layout_marginLeft="@dimen/DIMEN_12DP"
+                android:background="@drawable/bg_circle"
+                android:button="@null"
+                android:clickable="false" />
+
+            <RadioButton
+                android:layout_width="@dimen/DIMEN_10DP"
+                android:layout_height="@dimen/DIMEN_10DP"
+                android:layout_marginLeft="@dimen/DIMEN_12DP"
+                android:background="@drawable/bg_circle"
+                android:button="@null"
+                android:clickable="false" />
+        </RadioGroup>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="family">
+        <item>家庭成员</item>
+        <item>家庭生活选择</item>
+    </string-array>
+    <string-array name="community">
+        <item>社区属性</item>
+        <item>基础设施</item>
+        <item>社区配套</item>
+    </string-array>
+    <string-array name="house">
+        <item>户型</item>
+        <item>房屋类型</item>
+        <item>建筑年代</item>
+        <item>面积</item>
+        <item>房本年限</item>
+    </string-array>
+
+    <string-array name="family_des">
+        <item>未来家里居住的成员</item>
+        <item>在社区周边经常做的事</item>
+    </string-array>
+    <string-array name="community_des">
+        <item>社区内部相关特色</item>
+        <item>社区1km范围内的基础设施</item>
+        <item>社区3km范围内的大型设施</item>
+    </string-array>
+
+</resources>

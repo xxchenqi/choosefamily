@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/yellow_FBE558">
+
+            <TextView
+                android:id="@+id/tv_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black_282323"
+                android:textSize="@dimen/DIMEN_17DP" />
+
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/DIMEN_17DP"
+                android:text="@string/save"
+                android:textColor="@drawable/bg_tv_login" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <com.baidu.mapapi.map.MapView
+                        android:id="@+id/bmapView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:clickable="true" />
+
+                    <ImageView
+                        android:id="@+id/iv_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="@dimen/DIMEN_24DP"
+                        android:src="@drawable/map_home_icon"/>
+                    <ImageView
+                        android:id="@+id/iv_center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/DIMEN_24DP"
+                        android:src="@drawable/map_lsign_icon" />
+                </RelativeLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_b2"
+                android:visibility="gone">
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_88DP"
+                android:layout_margin="@dimen/DIMEN_24DP"
+                android:background="@drawable/desc_chang_map">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/et_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/DIMEN_44DP"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/DIMEN_10DP"
+                        android:hint="新增第一个工作地点"
+                        android:textColor="@color/black_28"
+                        android:textColorHint="@color/gray_999999"
+                        android:textSize="@dimen/DIMEN_14DP" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/DIMEN_1DP"
+                        android:background="@color/gray_e" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/et_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/DIMEN_44DP"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/DIMEN_10DP"
+                        android:hint="新增第二个工作地点"
+                        android:textColor="@color/black_28"
+                        android:textColorHint="@color/gray_999999"
+                        android:textSize="@dimen/DIMEN_14DP" />
+                </LinearLayout>
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

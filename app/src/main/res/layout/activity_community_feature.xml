@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@color/gray_EFEFEF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/yellow_FBE558">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/community_feature"
+                    android:textColor="@color/black_282323"
+                    android:textSize="@dimen/DIMEN_17DP" />
+            </android.support.v7.widget.Toolbar>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/banner" />
+
+            <GridView
+                android:id="@+id/gv_data"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/DIMEN_15DP"
+                android:layout_marginRight="@dimen/DIMEN_15DP"
+                android:layout_marginTop="@dimen/DIMEN_12DP"
+                android:layout_weight="1"
+                android:horizontalSpacing="@dimen/DIMEN_7DP"
+                android:numColumns="3"
+                android:verticalSpacing="@dimen/DIMEN_10DP" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_56DP"
+                android:background="@color/gray_DDDDDD"
+                android:gravity="center"
+                android:text="@string/next"
+                android:textColor="@color/gray_A0A0A0"
+                android:textSize="@dimen/DIMEN_17DP" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_feature"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/v_dismiss"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/translate_66" />
+
+            <LinearLayout
+                android:id="@+id/ll_feature_inner"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@color/gray_EFEFEF"
+                android:clipChildren="false"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_pop_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:src="@drawable/choose_close_btn" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/DIMEN_24DP"
+                        android:layout_marginTop="@dimen/DIMEN_20DP"
+                        android:drawableLeft="@drawable/choose_title_icon"
+                        android:drawablePadding="@dimen/DIMEN_10DP"
+                        android:drawableRight="@drawable/choose_title_icon"
+                        android:text="偏好特色选择"
+                        android:textColor="@color/black_282323"
+                        android:textSize="@dimen/DIMEN_16DP" />
+                </FrameLayout>
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_pop_feature"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/DIMEN_12DP"
+                    android:layout_marginRight="@dimen/DIMEN_30DP"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/DIMEN_30DP"
+                    android:layout_weight="1"
+                    android:clipChildren="false" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_56DP"
+                android:background="@color/yellow_FBE558"
+                android:gravity="center"
+                android:text="@string/save"
+                android:textColor="@color/brown_693119"
+                android:textSize="@dimen/DIMEN_17DP" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</layout>

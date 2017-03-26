@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:background="@color/white_FFFFFF"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/DIMEN_48DP">
+        <TextView
+            android:id="@+id/text1"
+            android:text="黄浦区"
+            android:textSize="@dimen/DIMEN_14DP"
+            android:textColor="@color/black_282323"
+            android:paddingLeft="@dimen/DIMEN_24DP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/ivCheck"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/DIMEN_24DP"
+            android:src="@drawable/home_sel_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</layout>
